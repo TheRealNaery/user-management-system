@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply gradient background */
+body {
+  @apply bg-gradient-to-br from-gray-900 to-gray-800 text-white;
+}
+
+/* Table Styling */
+table {
+  @apply w-full text-left;
+}
+thead th {
+  @apply p-2 text-gray-400 border-b border-gray-600;
+}
+tbody td {
+  @apply p-2;
+}
+
+/* Pagination Styling */
+.pagination {
+  @apply flex items-center justify-center space-x-2 mt-4;
+}
+.pagination button {
+  @apply w-8 h-8 flex items-center justify-center text-gray-400 bg-gray-700 rounded-md;
+}
+.pagination .active {
+  @apply bg-orange-500 text-white;
+}
+
+/* Buttons */
+button {
+  @apply px-4 py-2 rounded-md;
+}
+button.export {
+  @apply bg-gray-600 text-white;
+}
+button.new-user {
+  @apply bg-orange-500 text-white;
+}
